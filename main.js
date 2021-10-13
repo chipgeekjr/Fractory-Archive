@@ -207,7 +207,7 @@ Fractory = Ice.$extend('Fractory', {
 
 		self.keybindings = KeyBindings();
 
-		self.analytics = Analytics();
+		//self.analytics = Analytics();
 		self.dragging_part = ko.observable(null);
 	},
 	__keys__: function() {
