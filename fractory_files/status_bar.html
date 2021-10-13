@@ -1,0 +1,53 @@
+<table class="game_stats">
+    <tbody>
+        <tr>
+            <th>Mana</th>
+            <td>
+                <i class="icon-mana"></i>
+                <span class="mana" data-bind="text: game.mana().formatBig()"></span>
+                (+<span class="generated" data-bind="text: game.mana_generated().formatBig()"></span>
+                -<span class="spent" data-bind="text: (function() {
+                    var tot = 0;
+                    _.each(game.spent_mana(), function(sm) {
+                        tot += sm.val();
+                    });
+                    return tot;
+                })().formatBig()
+
+                "></span> =
+                <span class="mana" data-bind="text: (game.net_mana() >= 0 ?
+                '+' : '') + game.net_mana().formatBig()"></span>/tick)
+            </td>
+        </tr>
+        <tr>
+            <th>Arcana</th>
+            <td>
+                <span class="arcana" data-bind="text: game.arcana().formatBig()"></span>
+                (+<span class="generated" data-bind="text: game.arcana_generated().formatBig()"></span>/tick)
+            </td>
+
+
+
+        </tr>
+    </tbody>
+</table><!--
+     FILE ARCHIVED ON 01:46:10 Oct 11, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:11:21 Oct 13, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 294.221
+  exclusion.robots: 0.404
+  exclusion.robots.policy: 0.392
+  RedisCDXSource: 0.746
+  esindex: 0.012
+  LoadShardBlock: 261.938 (3)
+  PetaboxLoader3.resolve: 116.644 (4)
+  PetaboxLoader3.datanode: 191.753 (4)
+  CDXLines.iter: 26.609 (3)
+  load_resource: 92.94
+-->
