@@ -1,0 +1,106 @@
+#outer-barG{
+    height:31px;
+    width:109px;
+    border:2px solid rgb(0,0,0);
+    overflow:hidden;
+    background-color:rgb(255,255,255);
+    margin:auto;
+}
+
+.stripe_holder {
+    height: 100%;
+    &.up {
+        transform: rotate(180deg);
+    }
+    &.side {
+        height: 0;
+    }
+    &.disconnected, &.inactive {
+        height: 0;
+    }
+    overflow: hidden;
+}
+
+.link_stripe {
+    overflow: hidden;
+    background-color: white;
+    float:right;
+    width:12px;
+    height:102px;
+    margin-right:15px;
+    margin-top:-50px;
+    transform:rotate(45deg);
+        -o-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+}
+
+.inner_stripe_holder{
+    //margin-left: -100%;
+    transform: translate(-100%, 0);
+
+    width:100%;
+    height: 100%;
+
+    animation-name:bar-animationG;
+        -o-animation-name:bar-animationG;
+        -ms-animation-name:bar-animationG;
+        -webkit-animation-name:bar-animationG;
+        -moz-animation-name:bar-animationG;
+    animation-duration:1.75s;
+        -o-animation-duration:1.75s;
+        -ms-animation-duration:1.75s;
+        -webkit-animation-duration:1.75s;
+        -moz-animation-duration:1.75s;
+    animation-iteration-count:infinite;
+        -o-animation-iteration-count:infinite;
+        -ms-animation-iteration-count:infinite;
+        -webkit-animation-iteration-count:infinite;
+        -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+        -o-animation-direction:normal;
+        -ms-animation-direction:normal;
+        -webkit-animation-direction:normal;
+        -moz-animation-direction:normal;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes bar-animationG{
+    0%{
+        transform: translate(-100%, 0);
+        //margin-left: -100%;
+        //margin-top:-15px;
+    }
+
+    100%{
+        transform: translate(100%, 0);
+        //margin-left: 120%;
+        //margin-top:-15px;
+    }
+}
+
+/*
+     FILE ARCHIVED ON 12:52:29 Nov 15, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:58:14 Oct 13, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 294.226
+  exclusion.robots: 0.209
+  exclusion.robots.policy: 0.201
+  RedisCDXSource: 5.36
+  esindex: 0.01
+  LoadShardBlock: 267.3 (3)
+  PetaboxLoader3.datanode: 208.634 (5)
+  CDXLines.iter: 19.122 (3)
+  load_resource: 266.849
+  PetaboxLoader3.resolve: 217.614
+  loaddict: 40.119
+*/
